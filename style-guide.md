@@ -7,6 +7,19 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
+$red: hsl(0% 36% 70%)
+$softRed: hsl(0% 93% 68%)
+$grayRed: hsl(0% 6% 24%)
+
+
+$gradientA: linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%))
+$gradientB: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%))
+
+
+
+
+
+
 ## Colors
 
 ### Primary
