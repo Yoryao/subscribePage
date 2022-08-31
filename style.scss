@@ -1,7 +1,98 @@
 @use "_colors";
 
 * {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    background-color: colors.$gradientB;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: hsl(0, 100%, 98%);
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+}
+
+#brand {
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  #brandLogo {
+    height: 25px;
+  }
+}
+
+#imageContainer {
+  width: 100%;
+  height: 250px;
+
+  #ladyimage {
+    width: 100%;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 10px;
+
+  h1 {
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 60px;
+    font-size: 35px;
+    font-weight: 300;
+    color: colors.$red;
+  }
+  h2 {
+    border: none;
+    padding-bottom: 13px;
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 12px;
+  }
+}
+#message {
+  width: 81%;
+
+  color: colors.$grayRed;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  filter: blur(0.5px);
+}
+
+#emailInput {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid colors.$red;
+  width: 85%;
+  height: 45px;
+  margin: 40px auto 93px auto;
+  border-radius: 50px;
+
+  justify-content: space-between;
+
+  input {
+    border: none;
+    margin-left: 26px;
+    font-size: 15px;
+    width: 80%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  #sendBtn {
+    width: 65px;
+    border-radius: 50px;
+    border: none;
+    background: colors.$gradientB;
+
+    #arrow {
+      background: transparent;
+    }
+  }
 }

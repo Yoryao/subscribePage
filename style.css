@@ -1,7 +1,91 @@
 * {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  background-color: linear-gradient(135deg, hsl(1deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  margin: 0;
+  background-color: hsl(0deg, 100%, 98%);
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+}
+
+#brand {
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+#brand #brandLogo {
+  height: 25px;
+}
+
+#imageContainer {
+  width: 100%;
+  height: 250px;
+}
+#imageContainer #ladyimage {
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 10px;
+}
+.titleContainer h1 {
+  border: none;
+  padding-bottom: 5px;
+  padding-top: 60px;
+  font-size: 35px;
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+}
+.titleContainer h2 {
+  border: none;
+  padding-bottom: 13px;
+  font-size: 33px;
+  font-weight: bold;
+  letter-spacing: 12px;
+}
+
+#message {
+  width: 81%;
+  color: hsl(0deg, 6%, 24%);
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  filter: blur(0.5px);
+}
+
+#emailInput {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid hsl(0deg, 36%, 70%);
+  width: 85%;
+  height: 45px;
+  margin: 40px auto 93px auto;
+  border-radius: 50px;
+  justify-content: space-between;
+}
+#emailInput input {
+  border: none;
+  margin-left: 26px;
+  font-size: 15px;
+  width: 80%;
+}
+#emailInput input:focus {
+  outline: none;
+}
+#emailInput #sendBtn {
+  width: 65px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, hsl(1deg, 80%, 86%), hsl(0deg, 74%, 74%));
+}
+#emailInput #sendBtn #arrow {
+  background: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

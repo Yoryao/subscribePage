@@ -20,23 +20,29 @@
 <body>
 
     <div id="brand">
-      <img src="./images/logo.svg" alt="brand logo" id="brand logo">
+      <img src="./images/logo.svg" alt="brand logo" id="brandLogo">
     </div>
     
     <div id="imageContainer">
       <img src="./images/hero-mobile.jpg" alt="lady image hero image" id="ladyImage">
     </div>
 
-    <h1 id="mainTitle">We're coming soon</h1>
+    <div class="titleContainer">
+        <h1 id="mainTitle">WE'RE </h1>
+        <h2>COMING</br> SOON</h2>
+    </div>
 
-    <p id="message">  Hello fellow shoppers! We're currently building our new fashion store. 
-      Add your email below to stay up-to-date with announcements and our launch deals.
-    </p>
+    <p id="message">  Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
   
     <div id="emailInput">
         <input type="text" name="mailInput" id="mailInput" placeholder="Email Address">
-        <button id="sendBtn"><img src="./images/icon-arrow.svg" alt=""></button>
+        <button id="sendBtn" onclick="checkEmail()"><img id="arrow" src="./images/icon-arrow.svg" alt="arrow Image"></button>
     </div>
+
+
+
+
+
   <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
