@@ -7,34 +7,35 @@
 }
 
 body {
-  width: 375px;
+  width: 376px;
 }
-
-#brand {
+body #brand {
   margin: 0;
   padding-left: 30px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
-#brand #brandLogo {
+body #brand #brandLogo {
   height: 25px;
 }
-
-#imageContainer {
+body #imageContainer {
   width: 100%;
   height: 250px;
 }
-#imageContainer #ladyimage {
+body #imageContainer #ladyimage {
   width: 100%;
 }
-
-.titleContainer {
+body #textContainer {
+  display: flex;
+  flex-direction: column;
+}
+body #textContainer .titleContainer {
   display: flex;
   flex-direction: column;
   text-align: center;
   letter-spacing: 10px;
 }
-.titleContainer h1 {
+body #textContainer .titleContainer h1 {
   border: none;
   padding-bottom: 5px;
   padding-top: 60px;
@@ -42,15 +43,14 @@ body {
   font-weight: 300;
   color: hsl(0deg, 36%, 70%);
 }
-.titleContainer h2 {
+body #textContainer .titleContainer h2 {
   border: none;
   padding-bottom: 13px;
   font-size: 33px;
   font-weight: bold;
   letter-spacing: 12px;
 }
-
-#message {
+body #textContainer #message {
   width: 81%;
   color: hsl(0deg, 6%, 24%);
   margin: auto;
@@ -58,8 +58,7 @@ body {
   font-size: 14px;
   filter: blur(0.5px);
 }
-
-#emailInput {
+body #textContainer #emailInput {
   display: flex;
   flex-direction: row;
   border: 1px solid hsl(0deg, 36%, 70%);
@@ -69,23 +68,77 @@ body {
   border-radius: 50px;
   justify-content: space-between;
 }
-#emailInput input {
+body #textContainer #emailInput input {
   border: none;
   margin-left: 26px;
   font-size: 15px;
   width: 80%;
 }
-#emailInput input:focus {
+body #textContainer #emailInput input:focus {
   outline: none;
 }
-#emailInput #sendBtn {
+body #textContainer #emailInput #sendBtn {
   width: 65px;
   border-radius: 50px;
   border: none;
   background: linear-gradient(135deg, hsl(1deg, 80%, 86%), hsl(0deg, 74%, 74%));
 }
-#emailInput #sendBtn #arrow {
+body #textContainer #emailInput #sendBtn #arrow {
   background: transparent;
+}
+
+@media (min-width: 375px) {
+  body {
+    width: 1440px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  body #brand {
+    position: absolute;
+    top: 20px;
+    left: 165px;
+  }
+  body #imageContainer {
+    width: 610px;
+    height: 100vh;
+  }
+  body #imageContainer #ladyImage {
+    height: auto;
+    width: 610px;
+    content: url("./images/hero-desktop.jpg");
+  }
+  body .titleContainer {
+    text-align: left;
+    padding-left: 165px;
+    letter-spacing: 10px;
+  }
+  body .titleContainer h1 {
+    width: 100%;
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 60px;
+    padding-left: 165px;
+    font-size: 45px;
+    font-weight: 300;
+    color: hsl(0deg, 36%, 70%);
+  }
+  body .titleContainer h2 {
+    width: 100%;
+    border: none;
+    padding-bottom: 13px;
+    padding-left: 165px;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 12px;
+  }
+  body #message {
+    width: 81%;
+    color: hsl(0deg, 6%, 24%);
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    filter: blur(0.5px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
