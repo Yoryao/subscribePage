@@ -7,7 +7,8 @@
 }
 
 body {
-  width: 376px;
+  margin: 0;
+  width: 374px;
 }
 body #brand {
   margin: 0;
@@ -87,7 +88,7 @@ body #textContainer #emailInput #sendBtn #arrow {
   background: transparent;
 }
 
-@media (min-width: 375px) {
+@media (width > 375px) {
   body {
     width: 1440px;
     display: flex;
@@ -107,12 +108,16 @@ body #textContainer #emailInput #sendBtn #arrow {
     width: 610px;
     content: url("./images/hero-desktop.jpg");
   }
-  body .titleContainer {
-    text-align: left;
+  body #textContainer {
+    height: 100vh;
+  }
+  body #textContainer .titleContainer {
+    padding-top: 200px;
     padding-left: 165px;
+    text-align: left;
     letter-spacing: 10px;
   }
-  body .titleContainer h1 {
+  body #textContainer .titleContainer #mainTitle {
     width: 100%;
     border: none;
     padding-bottom: 5px;
@@ -122,7 +127,7 @@ body #textContainer #emailInput #sendBtn #arrow {
     font-weight: 300;
     color: hsl(0deg, 36%, 70%);
   }
-  body .titleContainer h2 {
+  body #textContainer .titleContainer h2 {
     width: 100%;
     border: none;
     padding-bottom: 13px;
@@ -131,13 +136,43 @@ body #textContainer #emailInput #sendBtn #arrow {
     font-weight: bold;
     letter-spacing: 12px;
   }
-  body #message {
-    width: 81%;
+  body #textContainer #message {
     color: hsl(0deg, 6%, 24%);
     margin: auto;
-    text-align: center;
-    font-size: 14px;
+    padding-top: 60px;
+    padding-left: 165px;
+    text-align: left;
+    font-size: 20px;
     filter: blur(0.5px);
+  }
+  body #textContainer #emailInput {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid hsl(0deg, 6%, 24%);
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    justify-content: space-between;
+  }
+  body #textContainer #emailInput input {
+    border: none;
+    border-radius: 50px;
+    margin-left: 26px;
+    font-size: 15px;
+    width: 55%;
+    height: 50px;
+  }
+  body #textContainer #emailInput input:focus {
+    outline: none;
+  }
+  body #textContainer #emailInput #sendBtn {
+    width: 65px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, hsl(1deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  }
+  body #textContainer #emailInput #sendBtn #arrow {
+    background: transparent;
   }
 }
 
