@@ -9,23 +9,15 @@ function checkEmail() {
     let validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
     if(validEmail.test(mail.value)) {
-        console.log("mail Correcto")
+        let errorMessage = document.getElementById('errorContainer');  
+        errorMessage.classList.add("showError");
+        let errorIcon = document.getElementById('errorIcon');  
+        errorIcon.classList.add("showError");
     } else {
-        console.log("mail Incorrecto")
+    errorMessage.classList.remove("showError");
+    errorIcon.classList.remove("showError");
+
     }
 
 }
 
-
-                
-	
-
-// 	// Using test we can check if the text match the pattern
-// 	if( validEmail.test(emailField.value) ){
-// 		alert('Email is valid, continue with form submission');
-// 		return true;
-// 	}else{
-// 		alert('Email is invalid, skip form submission');
-// 		return false;
-// 	}
-// } 

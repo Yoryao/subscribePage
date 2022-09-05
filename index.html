@@ -38,8 +38,16 @@
   
     <div id="emailInput">
         <input type="text" name="mailInput" id="mailInput" placeholder="Email Address">
+        <img src="./images/icon-error.svg" alt="Error icon" id="errorIcon">
         <button id="sendBtn" onclick="checkEmail()"><img id="arrow" src="./images/icon-arrow.svg" alt="arrow Image"></button>
     </div>
+
+    <div class="inputErrorMessage" id="errorMessage">
+      <p id="errorContainer" class="errorMessage">Please provide a valid email</p>
+    </div>
+
+
+
 
   </div>
 

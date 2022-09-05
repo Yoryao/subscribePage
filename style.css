@@ -97,7 +97,7 @@ body #textContainer #emailInput #sendBtn #arrow {
   body #brand {
     position: absolute;
     top: 20px;
-    left: 165px;
+    left: 140px;
   }
   body #imageContainer {
     width: 610px;
@@ -110,15 +110,14 @@ body #textContainer #emailInput #sendBtn #arrow {
   }
   body #textContainer {
     height: 100vh;
+    width: 100%;
+    padding-top: 165px;
   }
   body #textContainer .titleContainer {
-    padding-top: 200px;
-    padding-left: 165px;
     text-align: left;
-    letter-spacing: 10px;
   }
   body #textContainer .titleContainer #mainTitle {
-    width: 100%;
+    letter-spacing: 10px;
     border: none;
     padding-bottom: 5px;
     padding-top: 60px;
@@ -128,7 +127,6 @@ body #textContainer #emailInput #sendBtn #arrow {
     color: hsl(0deg, 36%, 70%);
   }
   body #textContainer .titleContainer h2 {
-    width: 100%;
     border: none;
     padding-bottom: 13px;
     padding-left: 165px;
@@ -138,32 +136,37 @@ body #textContainer #emailInput #sendBtn #arrow {
   }
   body #textContainer #message {
     color: hsl(0deg, 6%, 24%);
-    margin: auto;
+    margin: 0;
     padding-top: 60px;
     padding-left: 165px;
+    padding-bottom: 55px;
     text-align: left;
-    font-size: 20px;
+    font-size: 19px;
     filter: blur(0.5px);
   }
   body #textContainer #emailInput {
     display: flex;
     flex-direction: row;
-    border: 1px solid hsl(0deg, 6%, 24%);
-    width: 80%;
-    height: 50px;
+    width: 520px;
+    height: 51px;
     border-radius: 50px;
+    margin-bottom: 20px;
     justify-content: space-between;
   }
   body #textContainer #emailInput input {
-    border: none;
-    border-radius: 50px;
     margin-left: 26px;
     font-size: 15px;
     width: 55%;
-    height: 50px;
+    height: 48px;
   }
   body #textContainer #emailInput input:focus {
     outline: none;
+  }
+  body #textContainer #emailInput #errorIcon {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    justify-self: right;
   }
   body #textContainer #emailInput #sendBtn {
     width: 65px;
@@ -173,6 +176,20 @@ body #textContainer #emailInput #sendBtn #arrow {
   }
   body #textContainer #emailInput #sendBtn #arrow {
     background: transparent;
+  }
+  body #textContainer #emailInput #sendBtn:hover {
+    cursor: pointer;
+  }
+  body #textContainer .inputErrorMessage {
+    display: block;
+    width: 80%;
+    margin-top: 0;
+    margin-left: 183px;
+    color: red;
+    filter: blur(0.5px);
+  }
+  body #textContainer .inputErrorMessage .showError {
+    display: none;
   }
 }
 

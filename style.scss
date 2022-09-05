@@ -112,7 +112,7 @@ body {
     #brand {
       position: absolute;
       top: 20px;
-      left: 165px;
+      left: 140px;
     }
 
     #imageContainer {
@@ -128,14 +128,14 @@ body {
 
     #textContainer {
       height: 100vh;
+      width: 100%;
+      padding-top: 165px;
       .titleContainer {
-        padding-top: 200px;
-        padding-left: 165px;
         text-align: left;
-        letter-spacing: 10px;
 
-        #mainTitle  {
-          width: 100%;
+        #mainTitle {
+          letter-spacing: 10px;
+
           border: none;
           padding-bottom: 5px;
           padding-top: 60px;
@@ -146,7 +146,6 @@ body {
         }
 
         h2 {
-          width: 100%;
           border: none;
           padding-bottom: 13px;
           padding-left: 165px;
@@ -158,34 +157,40 @@ body {
 
       #message {
         color: colors.$grayRed;
-        margin: auto;
+        margin: 0;
         padding-top: 60px;
         padding-left: 165px;
+        padding-bottom: 55px;
         text-align: left;
-        font-size: 20px;
+        font-size: 19px;
         filter: blur(0.5px);
       }
 
       #emailInput {
         display: flex;
         flex-direction: row;
-        border: 1px solid colors.$grayRed;
-        width: 80%;
-        height: 50px;
+        width: 520px;
+        height: 51px;
         border-radius: 50px;
+        margin-bottom: 20px;
         justify-content: space-between;
 
         input {
-          border: none;
-          border-radius: 50px;
           margin-left: 26px;
           font-size: 15px;
           width: 55%;
-          height: 50px;
+          height: 48px;
 
           &:focus {
             outline: none;
           }
+        }
+
+        #errorIcon {
+          width: 20px;
+          height: 20px;
+          align-self: center;
+          justify-self:right ;
         }
 
         #sendBtn {
@@ -193,11 +198,30 @@ body {
           border-radius: 50px;
           border: none;
           background: colors.$gradientB;
-          
 
           #arrow {
             background: transparent;
           }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .inputErrorMessage {
+        display: block;
+        width: 80%;
+        margin-top: 0;
+        margin-left: 183px;
+        color: red ;
+        filter: blur(0.5px);
+
+      
+        
+        .showError {
+          display: none;
+          // background-color: red;
         }
       }
     }
