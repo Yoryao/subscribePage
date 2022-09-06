@@ -120,7 +120,7 @@ body {
       height: 100vh;
 
       #ladyImage {
-        height: auto;
+        height: max-content;
         width: 610px;
         content: url("./images/hero-desktop.jpg");
       }
