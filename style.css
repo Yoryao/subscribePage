@@ -122,7 +122,7 @@ body #textContainer #emailInput #sendBtn #arrow {
     padding-bottom: 5px;
     padding-top: 60px;
     padding-left: 165px;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 300;
     color: hsl(0deg, 36%, 70%);
   }
@@ -130,7 +130,7 @@ body #textContainer #emailInput #sendBtn #arrow {
     border: none;
     padding-bottom: 13px;
     padding-left: 165px;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
     letter-spacing: 12px;
   }
@@ -164,9 +164,9 @@ body #textContainer #emailInput #sendBtn #arrow {
   }
   body #textContainer #emailInput #errorIcon {
     width: 20px;
-    height: 20px;
     align-self: center;
-    justify-self: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   body #textContainer #emailInput #sendBtn {
     width: 65px;
@@ -188,7 +188,7 @@ body #textContainer #emailInput #sendBtn #arrow {
     color: red;
     filter: blur(0.5px);
   }
-  body #textContainer .inputErrorMessage .showError {
+  .showError {
     display: none;
   }
 }

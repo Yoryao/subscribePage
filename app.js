@@ -8,16 +8,49 @@ function checkEmail() {
 
     let validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
-    if(validEmail.test(mail.value)) {
+    if(!validEmail.test(mail.value)) {
+        let errorMessage = document.getElementById('errorContainer');  
+        errorMessage.classList.remove("showError");
+
+
+        
+        let errorIcon = document.getElementById('errorIcon');  
+        errorIcon.classList.remove("showError");
+    } 
+
+    else {
         let errorMessage = document.getElementById('errorContainer');  
         errorMessage.classList.add("showError");
-        let errorIcon = document.getElementById('errorIcon');  
+        let errorIcon = document.getElementById('errorIcon');
         errorIcon.classList.add("showError");
-    } else {
-    errorMessage.classList.remove("showError");
-    errorIcon.classList.remove("showError");
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // if(!validEmail.test(mail.value)) {
+    //     let errorMessage = document.getElementById('errorContainer');  
+    //     errorMessage.classList.add("showError");
+    //     let errorIcon = document.getElementById('errorIcon');  
+    //     errorIcon.classList.add("showError");
+    // } else {
+    // errorMessage.classList.remove("showError");
+    // errorIcon.classList.remove("showError");
+
+    // }
 
 }
 

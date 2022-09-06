@@ -140,7 +140,7 @@ body {
           padding-bottom: 5px;
           padding-top: 60px;
           padding-left: 165px;
-          font-size: 45px;
+          font-size: 50px;
           font-weight: 300;
           color: colors.$red;
         }
@@ -149,7 +149,7 @@ body {
           border: none;
           padding-bottom: 13px;
           padding-left: 165px;
-          font-size: 45px;
+          font-size: 50px;
           font-weight: bold;
           letter-spacing: 12px;
         }
@@ -188,9 +188,11 @@ body {
 
         #errorIcon {
           width: 20px;
-          height: 20px;
-          align-self: center;
-          justify-self:right ;
+          align-self: center          ;
+          
+          padding-top: 5px;
+          padding-bottom: 5px;
+         
         }
 
         #sendBtn {
@@ -219,11 +221,13 @@ body {
 
       
         
-        .showError {
-          display: none;
-          // background-color: red;
-        }
+       
       }
+    
     }
+  }
+  .showError {
+    display: none;
+    // background-color: red;
   }
 }
