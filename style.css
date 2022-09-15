@@ -22,7 +22,7 @@ main #brand #brandLogo {
 }
 main #imageContainer {
   width: 100%;
-  height: 250px;
+  height: 100%;
 }
 main #imageContainer #ladyimage {
   width: 100%;
