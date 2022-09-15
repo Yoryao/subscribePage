@@ -6,37 +6,37 @@
   box-sizing: border-box;
 }
 
-body {
+main {
   margin: 0;
   width: 374px;
 }
-body #brand {
+main #brand {
   margin: 0;
   padding-left: 30px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
-body #brand #brandLogo {
+main #brand #brandLogo {
   height: 25px;
 }
-body #imageContainer {
+main #imageContainer {
   width: 100%;
   height: 250px;
 }
-body #imageContainer #ladyimage {
+main #imageContainer #ladyimage {
   width: 100%;
 }
-body #textContainer {
+main #textContainer {
   display: flex;
   flex-direction: column;
 }
-body #textContainer .titleContainer {
+main #textContainer .titleContainer {
   display: flex;
   flex-direction: column;
   text-align: center;
   letter-spacing: 10px;
 }
-body #textContainer .titleContainer h1 {
+main #textContainer .titleContainer h1 {
   border: none;
   padding-bottom: 5px;
   padding-top: 60px;
@@ -44,14 +44,14 @@ body #textContainer .titleContainer h1 {
   font-weight: 300;
   color: hsl(0deg, 36%, 70%);
 }
-body #textContainer .titleContainer h2 {
+main #textContainer .titleContainer h2 {
   border: none;
   padding-bottom: 13px;
   font-size: 33px;
   font-weight: bold;
   letter-spacing: 12px;
 }
-body #textContainer #message {
+main #textContainer #message {
   width: 81%;
   color: hsl(0deg, 6%, 24%);
   margin: auto;
@@ -59,7 +59,7 @@ body #textContainer #message {
   font-size: 14px;
   filter: blur(0.5px);
 }
-body #textContainer #emailInput {
+main #textContainer #emailInput {
   display: flex;
   flex-direction: row;
   border: 1px solid hsl(0deg, 36%, 70%);
@@ -69,54 +69,54 @@ body #textContainer #emailInput {
   border-radius: 50px;
   justify-content: space-between;
 }
-body #textContainer #emailInput input {
+main #textContainer #emailInput input {
   border: none;
   margin-left: 26px;
   font-size: 15px;
   width: 80%;
 }
-body #textContainer #emailInput input:focus {
+main #textContainer #emailInput input:focus {
   outline: none;
 }
-body #textContainer #emailInput #sendBtn {
+main #textContainer #emailInput #sendBtn {
   width: 65px;
   border-radius: 50px;
   border: none;
   background: linear-gradient(135deg, hsl(1deg, 80%, 86%), hsl(0deg, 74%, 74%));
 }
-body #textContainer #emailInput #sendBtn #arrow {
+main #textContainer #emailInput #sendBtn #arrow {
   background: transparent;
 }
 
 @media (width > 375px) {
-  body {
+  main {
     width: 1440px;
     display: flex;
     flex-direction: row-reverse;
   }
-  body #brand {
+  main #brand {
     position: absolute;
     top: 20px;
     left: 140px;
   }
-  body #imageContainer {
+  main #imageContainer {
     width: 610px;
     height: 100vh;
   }
-  body #imageContainer #ladyImage {
+  main #imageContainer #ladyImage {
     height: max-content;
     width: 610px;
     content: url("./images/hero-desktop.jpg");
   }
-  body #textContainer {
+  main #textContainer {
     height: 100vh;
     width: 100%;
     padding-top: 165px;
   }
-  body #textContainer .titleContainer {
+  main #textContainer .titleContainer {
     text-align: left;
   }
-  body #textContainer .titleContainer #mainTitle {
+  main #textContainer .titleContainer #mainTitle {
     letter-spacing: 10px;
     border: none;
     padding-bottom: 5px;
@@ -126,7 +126,7 @@ body #textContainer #emailInput #sendBtn #arrow {
     font-weight: 300;
     color: hsl(0deg, 36%, 70%);
   }
-  body #textContainer .titleContainer h2 {
+  main #textContainer .titleContainer h2 {
     border: none;
     padding-bottom: 13px;
     padding-left: 165px;
@@ -134,7 +134,7 @@ body #textContainer #emailInput #sendBtn #arrow {
     font-weight: bold;
     letter-spacing: 12px;
   }
-  body #textContainer #message {
+  main #textContainer #message {
     color: hsl(0deg, 6%, 24%);
     margin: 0;
     padding-top: 60px;
@@ -144,7 +144,7 @@ body #textContainer #emailInput #sendBtn #arrow {
     font-size: 19px;
     filter: blur(0.5px);
   }
-  body #textContainer #emailInput {
+  main #textContainer #emailInput {
     display: flex;
     flex-direction: row;
     width: 520px;
@@ -153,34 +153,34 @@ body #textContainer #emailInput #sendBtn #arrow {
     margin-bottom: 20px;
     justify-content: space-between;
   }
-  body #textContainer #emailInput input {
+  main #textContainer #emailInput input {
     margin-left: 26px;
     font-size: 15px;
     width: 55%;
     height: 48px;
   }
-  body #textContainer #emailInput input:focus {
+  main #textContainer #emailInput input:focus {
     outline: none;
   }
-  body #textContainer #emailInput #errorIcon {
+  main #textContainer #emailInput #errorIcon {
     width: 20px;
     align-self: center;
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  body #textContainer #emailInput #sendBtn {
+  main #textContainer #emailInput #sendBtn {
     width: 65px;
     border-radius: 50px;
     border: none;
     background: linear-gradient(135deg, hsl(1deg, 80%, 86%), hsl(0deg, 74%, 74%));
   }
-  body #textContainer #emailInput #sendBtn #arrow {
+  main #textContainer #emailInput #sendBtn #arrow {
     background: transparent;
   }
-  body #textContainer #emailInput #sendBtn:hover {
+  main #textContainer #emailInput #sendBtn:hover {
     cursor: pointer;
   }
-  body #textContainer .inputErrorMessage {
+  main #textContainer .inputErrorMessage {
     display: block;
     width: 80%;
     margin-top: 0;
